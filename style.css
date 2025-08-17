@@ -17,10 +17,13 @@ Date: 16/8/2025
   src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
-body {
-  background-color: hsl(47, 88%, 63%);
+:root {
   font-family: Figtree, sans-serif;
   font-size: 16px;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
 }
 
 .flexcontainer {
@@ -95,5 +98,18 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 1440px) and (max-width: 375px) {
+  .flexcontainer {
+    height: 300vh;
+  }
+
+  .maincontainer {
+    width: 90%;
+    margin: 20px 0px;
+  }
+  footer {
+    margin-top: 350px;
+    margin-bottom: 10px;
+  }
 }
+
